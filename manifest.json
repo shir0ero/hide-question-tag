@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Hide Question Tag",
+    "version": "1.0",
+    "description": "Hides the tag of a given question on a webpage.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://codeforces.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon-16.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+      }
+    }
+  }
