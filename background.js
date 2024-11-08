@@ -1,1 +1,1 @@
-console.log('Background script running'); // Debugging line
+console.log('Background script running'); 
